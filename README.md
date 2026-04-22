@@ -9,12 +9,13 @@ You need to install the requirements before the training and testing.
 You need to download the dataset and decompress the data to the corresponding path within the dataset folder. For example, the default path for Caltech 256 is ./HENet/dataset/caltech256/256_ObjectCategories/...
 
 ## Running
-You need to train the target networks before performing attacks in undistorted or distorted scenarios.
+You can run eval_HENet.py or eval_JPEG.py for the evaluation of HENet. (If you download all the pre-training weights (including different target networks and HENets) that we provide on Hugging Face.)
+
+If you want to train your own HENet and evaluate on other target networks or datasets, you need to train the target networks before performing attacks in undistorted or distorted scenarios.
 
 Then, you can run the main_dense_121_vit_b.py within each sub-folder of 'distorted' and 'undistorted' for training HENet.
-You can run eval_HENet.py or eval_JPEG.py for the evaluation of HENet. (if you download the pre-training weight that we are going to provide.)
 
-Due to the storage restrictions of GitHub, we are unable to provide the weight of our HENet in this repository now. However, we are going to release these weights on some cloud storage platforms soon. 
+Due to the storage restrictions of GitHub, we are unable to provide the weight of our HENet in this repository now. However, the full release of our HENet can be found on Hugging Face (https://huggingface.co/zjwei-cqupt/HENet).
 
 ## Citation
 If you find this repository helpful, you may cite:
