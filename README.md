@@ -17,6 +17,9 @@ Then, you can run the main_dense_121_vit_b.py within each sub-folder of 'distort
 
 Due to the storage restrictions of GitHub, we are unable to provide the weight of our HENet in this repository now. However, the full release of our HENet can be found on Hugging Face (https://huggingface.co/zjwei-cqupt/HENet).
 
+## Important Tips
+If you want to integrate DDJS with your own framework, model, or task, you may adjust the value of T within DDJS to achieve the best performance. By default, T is set to 30 for our HENet according to the ablation study.
+
 ## Citation
 If you find this repository helpful, you may cite:
 
